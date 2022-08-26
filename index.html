@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/main.css" />
+        <title>Do List</title>
+        <script src="https://kit.fontawesome.com/48322e1650.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <section class="firstInformation display">
+                <div class="container">
+                    <h1>Wellcome...</h1>
+                    <form>
+                        <div class="error">Please Enter Valid Name</div>
+                        <label for="name">Enter Your :</label>
+                        <input type="text" id="name" placeholder="Name">
+                        <label for="gender">Gender :</label>
+                        <select id="gender">
+                            <option id="1" value="male">Male</option>
+                            <option id="2" value="female">Female</option>
+                        </select>
+                        <button id="submit">Start</button>
+                    </form>
+                </div>
+            </section>
+        </header>
+        <!-- start main tasks -->
+        <section class="mainContent">
+            <div class="container">
+                <div class="error2">Please Write The Task First Before Click on Button</div>
+                <!-- start progress -->
+                <section class="infoUser">
+                    <div class="logo">
+                        <img src="images/male2.jpg" id="photo" alt="male">
+                    </div>
+                    <h3 id="userName"><span id="lacab"></span></h3>
+                    <div class="father">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="date">
+                        <h6 id="date"></h6>
+                        <h6 id="time"></h6>
+                    </div>
+                    <button title="Reset User Information" class="resetInfo"><i class="fa-solid fa-arrows-rotate"></i></button>
+                </section>
+                <!-- end progress -->
+                <!-- start tasks -->
+                <section class="tasks">
+                </section>
+                <!-- end tasks -->
+                <!-- start add task -->
+                <section class="addTask">
+                    <button class="add"><i class="fa-solid fa-circle-plus"></i></button>
+                    <input type="text" id="inputTask" placeholder="Write And Add TO Do Task">
+                </section>
+                <!-- end add task -->
+            </div>
+        </section>
+        <!-- end main tasks -->
+        <script src="js/main1.js"></script>
+    </body>
+</html>
